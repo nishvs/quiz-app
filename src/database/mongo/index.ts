@@ -3,7 +3,6 @@ import mongoose, { MongooseOptions } from "mongoose";
 export class Mongo {
     public createConnection = async () => {
         try{
-            console.log(this.buildConnectionString());
             await mongoose.connect(this.buildConnectionString());
         }catch(err){
             console.log(err);
