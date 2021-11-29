@@ -1,0 +1,261 @@
+{
+	"info": {
+		"_postman_id": "1246e177-5378-4115-babe-a4ea7f1f3fe7",
+		"name": "Quiz-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3001/api/v1/register/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"nitish@gmail.com\",\n    \"password\":\"abcde\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/v1/register/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"v1",
+						"register",
+						""
+					]
+				},
+				"description": "Register User with email and password"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/v1/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"nitish@gmail.com\",\n    \"password\":\"abcde\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/v1/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"v1",
+						"login",
+						""
+					]
+				},
+				"description": "Get token to use the Quiz app valide for 5 hours"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/v1/quiz/",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzgyMTc3MzQsImV4cCI6MTYzODIzNTczNCwiYXVkIjoiNjFhNTM3ZmQ1MTM5YThmMmM1OGJmMTcyIn0.yGFF9G8ZB04zNqzuDhBrokmHIcOSnmwfIk3kSvMFf58",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quiz\":[{\"question\":\"a\",\"answer\":\"b\", \"mark\":2},{\"question\":\"c\",\"answer\":\"d\", \"mark\":2}]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/v1/quiz/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"v1",
+						"quiz",
+						""
+					]
+				},
+				"description": "Save quiz by providing token after login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/v1/test",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzgyMTgwMjYsImV4cCI6MTYzODIzNjAyNiwiYXVkIjoiNjFhNTM5MjI5NWZiOGM5MWFjYjZkZGMxIn0.lcZvGAkuY2QGNpDmJnKg4toPVN08rxN5mI7JmCCFXgY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quiz\":[{\"question\":\"a\",\"answer\":\"b\", \"mark\":1},{\"question\":\"c\",\"answer\":\"d\", \"mark\":1}]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/v1/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"v1",
+						"test"
+					]
+				},
+				"description": "Get quiz for attempts for authorized user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/v1/test",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzgyMTgwMjYsImV4cCI6MTYzODIzNjAyNiwiYXVkIjoiNjFhNTM5MjI5NWZiOGM5MWFjYjZkZGMxIn0.lcZvGAkuY2QGNpDmJnKg4toPVN08rxN5mI7JmCCFXgY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quizid\":\"61a508b8736044c315c1e222\",\n    \"test\":[{\"answer\":\"a\",\"number\":1}]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/v1/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"v1",
+						"test"
+					]
+				},
+				"description": "Authorized clients can submit answers by provinding quizid and answers. quidid is the _id returned in the GET request for same route"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/v1/test",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MzgyMTgwMjYsImV4cCI6MTYzODIzNjAyNiwiYXVkIjoiNjFhNTM5MjI5NWZiOGM5MWFjYjZkZGMxIn0.lcZvGAkuY2QGNpDmJnKg4toPVN08rxN5mI7JmCCFXgY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quizid\":\"61a508b8736044c315c1e222\",\n    \"test\":[{\"answer\":\"a\",\"number\":1}]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/v1/test/stats",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"v1",
+						"test",
+						"stats"
+					]
+				},
+				"description": "Submit answers for quiz with id and question numbers"
+			},
+			"response": []
+		}
+	]
+}
