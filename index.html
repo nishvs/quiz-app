@@ -292,6 +292,26 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script>
+    const initSwiper = () => {
+    var swiper = new Swiper(".swiper-container", {
+      loop: true, // Enables infinite loop for the slider
+      autoplay: {
+        delay: 5000, // Set the delay between slides (in milliseconds)
+      },
+      effect: "fade", // Add the fade effect
+      fadeEffect: {
+        crossFade: true, // Enable cross-fade transition for the fade effect
+      },
+      slidesPerView: 1, // Show one slide at a time
+      spaceBetween: 0, // Remove space between slides
+      pagination: {
+        el: ".swiper-pagination", // Use the custom element for pagination bullets
+        clickable: true, // Allow clicking on pagination bullets to navigate
+        dynamicBullets: true, // Automatically generate pagination bullets
+      },
+      direction: "horizontal", // Set the slider direction to horizontal
+    });
+  }
     $(document).ready(function () {
         // Hide all sections except the home section on page load
         $('section:not(#home)').hide();
@@ -302,7 +322,9 @@
 
             // Get the target section ID from the href attribute
             var targetSection = $(this).attr('href');
-
+            if(targetSection === "#home") {
+                initSwiper()
+            }
             // Show the target section and hide other sections
             $(targetSection).show().siblings('section').hide();
         });
@@ -324,19 +346,7 @@
             img.src = imgSrc;
             img.alt = imgAlt;
         });
-        var swiper = new Swiper(".swiper-container", {
-            loop: true, // Enables infinite loop for the slider
-            autoplay: {
-                delay: 5000, // Set the delay between slides (in milliseconds)
-            },
-            effect: "fade", // Add the fade effect
-            fadeEffect: {
-                crossFade: true, // Enable cross-fade transition for the fade effect
-            },
-            slidesPerView: 1, // Show one slide at a time
-            spaceBetween: 0, // Remove space between slides
-            direction: "horizontal", // Set the slider direction to horizontal
-        });
+        initSwiper()
     };
 </script>
 </body>
