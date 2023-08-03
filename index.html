@@ -1,155 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ClusterHAC Software Pvt. Ltd.</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClusterHAC Software Pvt. Ltd.</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-    }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
 
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
 
-    nav ul li {
-      display: inline;
-      margin-right: 10px;
-    }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
 
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-    }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-    main {
-      padding: 20px;
-    }
+        main {
+            padding: 20px;
+        }
 
-    section {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 30px;
-    }
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
 
-    h1, h2 {
-      color: #333;
-    }
+        h1, h2 {
+            color: #333;
+        }
 
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
-    .section {
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
 
-    }
+        .section {
 
-    .content {
-      flex: 1;
-    }
+        }
 
-    .section-image {
-      max-width: 50%;
-      height: auto;
-    }
-  </style>
+        .content {
+            flex: 1;
+        }
+
+        .section-image {
+            max-width: 50%;
+            height: auto;
+        }
+        .swiper-container
+        {
+            width: 100%; /* Set the desired width, e.g., 100% of the parent container */
+            max-width: 800px;
+            height: 400px;
+            margin-bottom: 20px;
+            margin: auto;
+        }
+        .swiper-slide img {
+          width: 100%; /* Set the image width to 100% of the slide container */
+          height: 100%; /* Set the image height to 100% of the slide container */
+          object-fit: cover; /* Maintain the image's aspect ratio and cover the entire slide */
+        }
+        /* Placeholder styles */
+        .image-placeholder {
+            width: 100%;
+            height: 100%;
+            background-color: #f2f2f2; /* Set the color of the placeholder */
+        }
+
+    </style>
 </head>
 <body>
 <header>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
-  <section id="home">
-    <div class="content">
-      <h1>Welcome to ClusterHAC Software - Your Microsoft Dynamics AX Solutions Partner.</h1>
-      <p>At ClusterHAC Software, we are passionate about empowering businesses with the transformative capabilities of Microsoft Dynamics AX. </p><p>A leading IT solutions provider, we offer a comprehensive suite of services tailored to meet the unique needs of your organization. With a team of seasoned experts and a track record of successful implementations, we are committed to helping you achieve your business goals and maximize your ROI.</p>
-    </div>
-    <!-- <img src="image1.jpg" alt="Image 1" class="section-image"> -->
-  </section>
+    <section id="home">
+        <div class="content">
+            <h2>Unlocking the Potential of Your Business with Cutting-Edge Solutions</h2>
+            <p>At ClusterHAC, we take pride in being a leading IT solutions provider, specializing in a wide array of
+                services designed to empower your business with efficiency, productivity, and growth. With our dedicated
+                team of experts and a proven track record of success, we are committed to delivering unparalleled
+                solutions tailored to meet your specific needs.</p>
+            <p>Our mission is to help you stay ahead of the competition by leveraging the latest technologies and
+                industry best practices. Whether you are a small business looking to streamline your operations or an
+                enterprise seeking transformational solutions, we have the expertise to guide you on your digital
+                journey.</p>
+            <p>With an unwavering commitment to excellence, we collaborate closely with our clients to understand their
+                unique challenges and craft tailor-made strategies that drive results. Our client-focused approach has
+                earned us a reputation as a trusted partner in the IT industry.</p>
+            <p>At ClusterHAC, innovation is at the core of everything we do. We constantly explore emerging trends and
+                cutting-edge technologies to deliver solutions that are future-proof and scalable. Our passion for
+                technology drives us to go above and beyond to ensure your success.</p>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- Slider images -->
+<!--              <div class="swiper-slide"><img src="https://github.com/nishvs/quiz-app/blob/master/images/home-1.jpg?raw=true" alt="Home-Image-1"></div>-->
 
-  <section id="about">
-    <div class="content">
-      <h2>About Us</h2>
-      <p>ClusterHAC software is a software technology service provider company located in Bangalore, India.</p><p> It is a Microsoft partner and provides services in Microsoft Dynamics 365 Finance and operations and Azure integration areas.</p>
-    </div>
-    <!-- <img src="image2.jpg" alt="Image 2" class="section-image"> -->
-  </section>
+<!--                <div class="swiper-slide"><img src="https://i.imgur.com/KjYUR6S.jpg" alt="Home-Image-3"></div>-->
+                <div class="swiper-slide"><div class="image-placeholder" data-src="https://i.imgur.com/AHcRY3J.jpg" data-alt="Placeholder 1"></div></div>
+                <div class="swiper-slide"><div class="image-placeholder" data-src="https://i.imgur.com/I6Ityh1.jpg" data-alt="Placeholder 1"></div></div>
+                <div class="swiper-slide"><div class="image-placeholder" data-src="https://i.imgur.com/RcPVKr7.jpg" data-alt="Placeholder 1"></div></div>
+                <div class="swiper-slide"><div class="image-placeholder" data-src="https://i.imgur.com/KjYUR6S.jpg" data-alt="Placeholder 1"></div></div>
+              <!-- Add more slider images as needed -->
 
-  <section id="services">
-    <div class="content">
-      <h2>Our Services</h2>
-      <p>We have a wide list of services on Microsoft products - ERP, CRM, Power platform and Azure.</p>
-      <ul>
-        <li>Implementation</li>
-        <li>Upgrade</li>
-        <li>Integrate</li>
-        <li>Maintain</li>
-        <li>Trainings</li>
-      </ul>
-    </div>
-    <!-- <img src="image3.jpg" alt="Image 3" class="section-image"> -->
-  </section>
+            </div>
+          </div>
+            <h3>Key Features of Our Services:</h3>
+            <ul>
+                <li>Customized Solutions: Tailor-made services to meet your business requirements and objectives.</li>
+                <li>Expert Team: A team of seasoned professionals with extensive knowledge in diverse technologies.</li>
+                <li>Seamless Integration: Integration of solutions with your existing systems for smooth operations.
+                </li>
+                <li>Continuous Support: Dedicated support for timely updates, maintenance, and issue resolution.</li>
+                <li>Data Security: Robust security measures to protect your valuable business data.</li>
+                <li>Scalable Solutions: Solutions that grow with your business, ensuring long-term success.</li>
+                <li>On-time Delivery: Efficient project management to deliver solutions within deadlines.</li>
+            </ul>
 
-  <section id="contact">
-    <div class="content">
-      <h2>Contact Us</h2>
-      <p>You can contact us for software solutions. Just send us a mail at support@clusterhac.com.</p>
-<!--      <form>-->
-<!--        <input type="text" placeholder="Name">-->
-<!--        <input type="email" placeholder="Email">-->
-<!--        <textarea placeholder="Message"></textarea>-->
-<!--        <button type="submit">Send</button>-->
-<!--      </form>-->
-    </div>
-    <!-- <img src="image4.jpg" alt="Image 4" class="section-image"> -->
-  </section>
+            <h3>Why Choose ClusterHAC for Your IT Needs?</h3>
+            <p>Partnering with ClusterHAC offers a host of advantages that set us apart from the competition:</p>
+            <ul>
+                <li>Industry Expertise: Our team comprises professionals with hands-on experience in diverse industries,
+                    ensuring a deep understanding of your sector's specific requirements.
+                </li>
+                <li>Client-Centric Approach: We prioritize your business goals, actively engaging with you to identify
+                    pain points and develop solutions that align with your vision.
+                </li>
+                <li>Proven Track Record: With numerous successful projects under our belt, we have a proven track record
+                    of delivering high-quality solutions that drive tangible results.
+                </li>
+                <li>Continuous Innovation: Our dedication to staying updated with the latest technological advancements
+                    enables us to provide you with innovative and forward-thinking solutions.
+                </li>
+                <li>Transparent Communication: We believe in transparent and open communication, keeping you informed at
+                    every step of the project's progress.
+                </li>
+                <li>Cost-Effective Solutions: We offer cost-effective solutions without compromising on quality,
+                    providing excellent value for your investment.
+                </li>
+                <li>Global Reach: Our solutions have helped businesses around the globe, giving us the expertise to
+                    handle diverse challenges in different markets.
+                </li>
+            </ul>
+            <h3>Our Associated Clients:</h3>
+            <p>We are privileged to have worked with a diverse range of clients across industries. Some of our esteemed
+                associated clients include:</p>
+            <ul>
+                <li>Sonata Software Limited</li>
+                <li>Quantum Omega</li>
+                <li>Anthology</li>
+                <li>Essilor Group</li>
+
+            </ul>
+
+            <p>These are just a few examples of the numerous clients we have had the pleasure of serving. Our dedication
+                to delivering exceptional solutions has earned us long-standing relationships with our clients, and we
+                continue to strive for excellence in every project we undertake.</p>
+        </div>
+        <!-- <img src="image1.jpg" alt="Image 1" class="section-image"> -->
+    </section>
+
+    <section id="about">
+        <div class="content">
+            <h2>About Us</h2>
+            <p>ClusterHAC Software  is a leading IT solutions provider with a passion for driving innovation and excellence.
+                With a rich history of empowering businesses since 2021, we have become a trusted
+                name in the industry, delivering transformative solutions to clients worldwide.</p>
+
+            <h3>Our Vision</h3>
+            <p>At ClusterHAC Software , our vision is to be the catalyst that propels our clients' businesses to new heights.
+                We aspire to be recognized as the go-to partner for organizations seeking innovative and reliable IT
+                solutions that optimize their processes, enhance efficiency, and drive success.</p>
+
+            <h3>Our Mission</h3>
+            <p>We are committed to leveraging the latest technologies and best practices to create custom-tailored
+                solutions that precisely address the unique needs of our clients. Our mission is to foster long-term
+                partnerships by consistently delivering exceptional results that exceed expectations.</p>
+
+            <h3>Our Values</h3>
+            <ul>
+                <li><strong>Client-Centricity:</strong> Our clients are at the heart of everything we do. We actively
+                    listen to their requirements, understand their pain points, and strive to offer solutions that align
+                    with their business objectives.
+                </li>
+                <li><strong>Innovation:</strong> Embracing change and innovation is part of our DNA. We continuously
+                    explore emerging technologies and methodologies to stay at the forefront of the industry and provide
+                    forward-thinking solutions.
+                </li>
+                <li><strong>Integrity:</strong> Transparency and integrity are the cornerstones of our interactions with
+                    clients, partners, and team members. We uphold the highest ethical standards and value open and
+                    honest communication.
+                </li>
+                <li><strong>Collaboration:</strong> We believe in the power of collaboration. Our team works closely
+                    with clients, fostering a collaborative environment where ideas are shared and refined to achieve
+                    the best possible outcomes.
+                </li>
+                <li><strong>Excellence:</strong> We are driven by a pursuit of excellence in every aspect of our work.
+                    From solution design to implementation and support, we strive for perfection and continuous
+                    improvement.
+                </li>
+            </ul>
+
+            <h3>Our Team</h3>
+            <p>Our team of experts is the backbone of our success. With diverse backgrounds and skills, our
+                professionals bring a wealth of experience to the table. They are Microsoft-certified, SAP-certified,
+                and possess extensive knowledge in various technologies, ensuring that we deliver nothing but the best
+                to our clients.</p>
+
+            <h3>Join Hands with ClusterHAC Software  for a Digital Transformation!</h3>
+            <p>When you choose ClusterHAC Software , you gain a partner that is as invested in your success as you are.
+                Together, we can navigate the challenges of the digital landscape and unlock the full potential of your
+                business. Contact us today to embark on a transformative journey and take your business to new
+                heights.</p>
+        </div>
+        <!-- <img src="image2.jpg" alt="Image 2" class="section-image"> -->
+    </section>
+
+    <section id="services">
+        <div class="content">
+            <h2>Our Services</h2>
+            <p>Empowering Businesses with Excellence in:</p>
+            <ul>
+                <li>Microsoft Dynamics AX</li>
+                <li>BI Development</li>
+                <li>Full Stack Development</li>
+                <li>Java and .NET Technologies</li>
+                <li>Manual and Automation Testing</li>
+                <li>SAP Implementation</li>
+                <li>Salesforce Solutions</li>
+            </ul>
+        </div>
+        <!-- <img src="image3.jpg" alt="Image 3" class="section-image"> -->
+    </section>
+
+    <section id="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p class="contact-address">
+                ClusterHAC Software Pvt. Ltd<br>
+                113, 2nd Cross, HSR Layout<br>
+                Bangalore - 560102, Karnataka<br>
+                India
+            </p>
+            <p>
+                For inquiries or assistance, please email us at:
+                <a href="mailto:support@clusterhac.com" class="contact-email">support@clusterhac.com</a>
+            </p>
+            <p>We will respond to your message as soon as possible. Thank you!</p>
+        </div>
+        <!-- <img src="image4.jpg" alt="Image 4" class="section-image"> -->
+    </section>
 
 </main>
 
 <footer>
-  <p>&copy; 2023 ClusterHAC Software Pvt. Ltd. All rights reserved.</p>
+    <p>&copy; 2023 ClusterHAC Software Pvt. Ltd. All rights reserved.</p>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script>
-  $(document).ready(function() {
-    // Hide all sections except the home section on page load
-    $('section:not(#home)').hide();
+    $(document).ready(function () {
+        // Hide all sections except the home section on page load
+        $('section:not(#home)').hide();
 
-    // Handle navigation clicks
-    $('nav a').on('click', function(e) {
-      e.preventDefault();
+        // Handle navigation clicks
+        $('nav a').on('click', function (e) {
+            e.preventDefault();
 
-      // Get the target section ID from the href attribute
-      var targetSection = $(this).attr('href');
+            // Get the target section ID from the href attribute
+            var targetSection = $(this).attr('href');
 
-      // Show the target section and hide other sections
-      $(targetSection).show().siblings('section').hide();
+            // Show the target section and hide other sections
+            $(targetSection).show().siblings('section').hide();
+        });
     });
-  });
-
+    window.onload = function () {
+        // Replace placeholders with actual images
+        var placeholders = document.querySelectorAll(".image-placeholder");
+        placeholders.forEach(function (placeholder) {
+            var imgSrc = placeholder.dataset.src;
+            var imgAlt = placeholder.dataset.alt;
+            var img = new Image();
+            img.onload = function () {
+                var parentSlide = placeholder.parentElement;
+                parentSlide.style.background = "none"; // Hide the placeholder
+                parentSlide.appendChild(img); // Append the image as a direct child of the slide
+                parentSlide.removeChild(placeholder);
+                img.style.display = "block"; // Show the actual image
+            };
+            img.src = imgSrc;
+            img.alt = imgAlt;
+        });
+        var swiper = new Swiper(".swiper-container", {
+            loop: true, // Enables infinite loop for the slider
+            autoplay: {
+                delay: 5000, // Set the delay between slides (in milliseconds)
+            },
+            effect: "fade", // Add the fade effect
+            fadeEffect: {
+                crossFade: true, // Enable cross-fade transition for the fade effect
+            },
+            slidesPerView: 1, // Show one slide at a time
+            spaceBetween: 0, // Remove space between slides
+            direction: "horizontal", // Set the slider direction to horizontal
+        });
+    };
 </script>
 </body>
 </html>
