@@ -90,6 +90,10 @@
             height: 100%;
             background-color: #f2f2f2; /* Set the color of the placeholder */
         }
+        .footerDiv {
+            display: flex;
+            justify-content: center;
+        }
 
     </style>
 </head>
@@ -286,7 +290,7 @@
 </main>
 
 <footer>
-    <p>&copy; 2023 ClusterHAC Software Pvt. Ltd. All rights reserved.</p>
+    <div class="footerDiv"><p>&copy;&nbsp;</p><p id="yearContent">2023</p><p>&nbsp;ClusterHAC Software Pvt. Ltd. All rights reserved.</p></div>    
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -347,6 +351,7 @@
             img.alt = imgAlt;
         });
         initSwiper()
+        document.getElementById('yearContent').innerHTML = new Date().getFullYear() 
     };
 </script>
 </body>
