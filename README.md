@@ -1,21 +1,27 @@
-# quiz-app
+# ClusterHAC website redesign
 
+A responsive, accessible, multi-page static website for ClusterHAC Software Pvt. Ltd.
 
+## Pages
 
-## Getting started
+- `index.html` — Home
+- `about.html` — Company overview and delivery approach
+- `services.html` — ERP, product design, full-stack development, and analytics
+- `contact.html` — Organization address and contact details
+- `privacy.html` — General website privacy policy
 
-Please provide the mongo db connection details in .env file
+## Publish
 
-then run 
-1) npm install
-2) npm run tsc
-1) npm run start
+Upload the contents of this folder to the public root of `clusterhac.com`. Keep the file and folder structure unchanged. The website needs no build step or server-side software.
 
-## Working with the API
-1. Please regsiter first by providing email and password
-2. Then you can login into your account by using the same credentails and get the token which can be used for accessing other API
-3. Pass the token in the header field authorization as a beared token to call the other api.
-4. The postman collection has the api which are available to use the quiz-app.
+Before publishing, verify the business name, office address, telephone number, email address, service descriptions, and privacy text. If the site uses analytics, cookies, forms, or other third-party services, update the privacy policy accordingly and have it reviewed by qualified legal counsel.
 
+## Local preview
 
+Run a local static server from this folder, for example:
 
+```bash
+python3 -m http.server 8080
+```
+
+Then open `http://localhost:8080`.
